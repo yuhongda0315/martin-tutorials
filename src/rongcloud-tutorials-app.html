@@ -9,7 +9,7 @@
 <link rel="import" href="elements/websocket-reloader.html">
 
 
-<dom-module id="ubuntu-tutorials-app">
+<dom-module id="rongcloud-tutorials-app">
   <link rel="lazy-import" group="codelabs-index" href="codelabs-index.html">
   <link rel="lazy-import" group="codelabs-page" href="codelabs-page.html">
   <link rel="lazy-import" group="error-404" href="error-404.html">
@@ -68,7 +68,7 @@
 
   <script>
     Polymer({
-      is: 'ubuntu-tutorials-app',
+      is: 'rongcloud-tutorials-app',
 
       properties: {
         _codelabsLastResponse: Object,
@@ -95,7 +95,7 @@
       },
 
       ready: function() {
-        let el = document.querySelector('ubuntu-tutorials-app');
+        let el = document.querySelector('rongcloud-tutorials-app');
         el.addEventListener('iron-ajax-error', function(error) {
           this._loadErrorPage();
         });

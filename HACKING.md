@@ -101,7 +101,7 @@ tutorials.ubuntu.com is built with Google's Polymer, using web components. You c
  - https://www.polymer-project.org/1.0/docs/
  - https://www.webcomponents.org/community/articles/why-web-components
 
-The website app has a primary entrypoint at `./src/ubuntu-tutorials-app.html`. All traffic to the app is routed through this file and it manages the routing and state. When the website is loaded the primary `api/codelabs.json` is loaded and used to provide metadata to the website components.
+The website app has a primary entrypoint at `./src/rongcloud-tutorials-app.html`. All traffic to the app is routed through this file and it manages the routing and state. When the website is loaded the primary `api/codelabs.json` is loaded and used to provide metadata to the website components.
 
 Tutorials are loaded via AJAX and pushed into the page as required. It loads them via URL, which are served as files from this website. These sources could be moved to a seperate server as needed, being wary of [cross origin policies](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 

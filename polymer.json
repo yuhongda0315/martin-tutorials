@@ -1,6 +1,6 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/ubuntu-tutorials-app.html",
+  "shell": "src/rongcloud-tutorials-app.html",
   "fragments": [
     "src/codelabs-index.html",
     "src/codelabs-page.html",
@@ -21,9 +21,9 @@
   "builds": [{
     "name": "bundled",
     "bundle": false,
-    "js": {"minify": false, "compile": true},
+    "js": {"minify": true, "compile": true},
     "css": {"minify": true},
-    "html": {"minify": false},
+    "html": {"minify": true},
     "addServiceWorker": false,
     "addPushManifest": true,
     "insertPrefetchLinks": true,
