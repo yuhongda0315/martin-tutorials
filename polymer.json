@@ -20,25 +20,14 @@
   ],
   "builds": [{
     "name": "bundled",
-    "bundle": true,
-    "js": {"minify": true, "compile": true},
+    "bundle": false,
+    "js": {"minify": false, "compile": true},
     "css": {"minify": true},
-    "html": {"minify": true},
-    "addServiceWorker": true,
+    "html": {"minify": false},
+    "addServiceWorker": false,
     "addPushManifest": true,
     "insertPrefetchLinks": true,
-    "basePath":true
-  },{
-    "name": "es6-bundled",
-    "bundle": true,
-    "js": {"minify": true, "compile": false},
-    "css": {"minify": true},
-    "html": {"minify": true},
-    "addServiceWorker": true,
-    "addPushManifest": true,
-    "insertPrefetchLinks": true,
-    "basePath":true,
-    "browserCapabilities": ["es2015"]
+    "basePath":false
   }],
   "lint": {
     "rules": ["polymer-2-hybrid"]

@@ -1,4 +1,4 @@
-# Ubuntu tutorials1
+# Ubuntu tutorials
 
 ## Running this site
 

@@ -93,12 +93,12 @@ def build_api(source, destination):
         write_json_file(category_tutorials, destination, category=category)
 
     # Write recent tutorials, filtered by event
-    for event in events:
-        event_tutorials = [
-            tutorial for tutorial in tutorials
-            if event in tutorial['tags']
-        ]
-        write_json_file(event_tutorials, destination, event=event)
+    # for event in events:
+    #     event_tutorials = [
+    #         tutorial for tutorial in tutorials
+    #         if event in tutorial['tags']
+    #     ]
+    #     write_json_file(event_tutorials, destination, event=event)
 
 
 def build_arguments():

@@ -1,7 +1,7 @@
 ---
 id: web-connect-tutorial
 summary: Learn how to create, write and publish tutorials on tutorials.ubuntu.com, reaching a wide audience of both beginner and advanced Linux users.
-categories: category
+categories: web
 tags: tutorial, guidelines, guide, write, contribute
 difficulty: 1
 status: published

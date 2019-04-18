@@ -433,7 +433,7 @@ case $run_command in
     "build")
         update_dependencies
 
-        run_as_user "${module_volumes}" yarn run build
+        run_as_user "${module_volumes}" yarn run build-all
 
         if [ -f _config.yml ]; then
             # For jekyll sites

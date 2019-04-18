@@ -1,5 +1,5 @@
 {
-  "name": "ubuntu-tutorials",
+  "name": "rongcloud-tutorials",
   "main": "index.html",
   "dependencies": {
     "app-layout": "polymerelements/app-layout#^1.0.0",
