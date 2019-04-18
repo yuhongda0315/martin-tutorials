@@ -1,17 +1,17 @@
 ---
-id: tutorial-guidelines
+id: web-connect-tutorial
 summary: Learn how to create, write and publish tutorials on tutorials.ubuntu.com, reaching a wide audience of both beginner and advanced Linux users.
-categories: community
+categories: category
 tags: tutorial, guidelines, guide, write, contribute
-difficulty: 2
+difficulty: 1
 status: published
 feedback_url: https://github.com/canonical-websites/tutorials.ubuntu.com/issues
-published: 2017-11-23
-author: Canonical Web Team <webteam@canonical.com>
+published: 2019-01-01
+author: RongCloud Web Team <yuhongda0315@163.com>
 
 ---
 
-# How to write a tutorial
+# 如何连接
 
 ## Overview
 Duration: 1:00
@@ -126,11 +126,13 @@ Each step is delimited by a second level title, for example:
 
 A step **Duration** in the `MM:SS` format should immediately follow the step title. The total tutorial time will then be computed automatically. A third level heading or empty line will break into the step content.
 
-```markdown
-## Step title
-Duration: 2:00
-
-Step content starts here.
+```js
+var user = {
+    name: 123
+}
+function show(){
+    console.log(user.name);
+}
 ```
 
 ### Basic example
@@ -535,6 +537,15 @@ Then enter the `tutorials.ubuntu.com` directory and launch the `run` script.
 ```bash
 cd tutorials.ubuntu.com
 ./run
+```
+
+```js
+var user = {
+    name: 'zhangsan'
+};
+function show(){
+    console.log(user.name);
+}
 ```
 
 If you have Docker correctly installed, it will build a local tutorials.ubuntu.com instance. The first time (and only the first time) you run this command, it will download all the required dependencies. When the site is ready, a local server starts serving it at `http://localhost:8016`.
