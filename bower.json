@@ -22,7 +22,8 @@
     "paper-dropdown-menu": "polymerelements/paper-dropdown-menu#^1.0.0",
     "paper-listbox": "polymerelements/paper-listbox#^1.0.0",
     "paper-tabs": "polymerelements/paper-tabs#^1.0.0",
-    "polymer": "Polymer/polymer#^1.11.0"
+    "polymer": "Polymer/polymer#^1.11.0",
+    "code-prettify": "google/code-prettify"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"

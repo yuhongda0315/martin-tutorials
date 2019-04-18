@@ -126,11 +126,13 @@ Each step is delimited by a second level title, for example:
 
 A step **Duration** in the `MM:SS` format should immediately follow the step title. The total tutorial time will then be computed automatically. A third level heading or empty line will break into the step content.
 
-```markdown
-## Step title
-Duration: 2:00
-
-Step content starts here.
+```js
+var user = {
+    name: 123
+}
+function show(){
+    console.log(user.name);
+}
 ```
 
 ### Basic example

@@ -7,7 +7,6 @@
 <link rel="import" href="../bower_components/iron-location/iron-query-params.html">
 
 <!-- <link rel="import" href="elements/tutorial-feedback.html"> -->
-
 <dom-module id="codelabs-page">
   <template>
     <style>
@@ -51,8 +50,20 @@
           color: #333;
         };
       }
-
-      #contentContainer google-codelab pre {
+      #contentContainer google-codelab pre .str,
+      #contentContainer google-codelab pre .kwd,
+      #contentContainer google-codelab pre .com,
+      #contentContainer google-codelab pre .typ,
+      #contentContainer google-codelab pre .lit,
+      #contentContainer google-codelab pre .pun,
+      #contentContainer google-codelab pre .pln,
+      #contentContainer google-codelab pre .tag,
+      #contentContainer google-codelab pre .atn,
+      #contentContainer google-codelab pre .atv,
+      #contentContainer google-codelab pre .dec {
+        font-family: Source Code Pro,Helvetica,Arial;
+      }
+      /* #contentContainer google-codelab pre {
         background-color: var(--color-light);
         border-radius: 2px;
         border: 1px solid var(--color-mid-light);
@@ -71,7 +82,7 @@
       #contentContainer google-codelab pre .atv,
       #contentContainer google-codelab pre .dec {
         color: #333;
-      }
+      } */
 
       #contentContainer google-codelab-step::shadow .instructions {
         /* TODO: Move arrows down on smaller viewports */
@@ -148,6 +159,10 @@
         codelabs: {
           type: Array,
           notify: true,
+        },
+        active: {
+          type: Boolean,
+          value: true
         },
         backURL: {
           type: String,
