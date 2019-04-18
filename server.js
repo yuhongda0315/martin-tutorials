@@ -27,6 +27,7 @@ let path = require('path');
 
 let prpl = require('prpl-server');
 
+const Config = require('./config');
 const commandLineArgs = require('command-line-args');
 const commandLineUsage = require('command-line-usage');
 const ansi = require('ansi-escape-sequences');
@@ -117,21 +118,17 @@ if (args.version) {
   console.log(require('../package.json').version);
   return;
 }
-
-if (!args.host) {
-  throw new Error('invalid --host');
-}
-if (isNaN(args.port)) {
+if (isNaN(Config.SERVER_PORT)) {
   throw new Error('invalid --port');
 }
-if (!args.root) {
-  throw new Error('invalid --root');
-}
+// if (!Config.ROOT) {
+//   throw new Error('invalid --root');
+// }
 
 // If specified explicitly, a missing config file will error. Otherwise, try
 // the default location and only warn when it's missing.
 if (!args.config) {
-  const p = path.join(args.root, 'polymer.json');
+  const p = path.join(Config.ROOT, 'polymer.json');
   if (fs.existsSync(p)) {
     args.config = p;
   } else {
@@ -348,14 +345,14 @@ app.get('/sitemap.xml', function(req, res) {
   res.send( tutorialsSitemap.toString() );
 });
 
-app.use('/', prpl.makeHandler(args.root, config));
+app.use('/', prpl.makeHandler(Config.ROOT, config));
 
 app.use(function errorHandler(req, res, next){
   res.locals.isError = true;
   next();
 });
 
-const server = app.listen(args.port, args.host, () => {
+const server = app.listen(Config.SERVER_PORT, args.host, () => {
   const addr = server.address();
   let urlHost = addr.address;
   if (addr.family === 'IPv6') {
