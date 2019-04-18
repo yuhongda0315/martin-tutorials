@@ -173,12 +173,19 @@
 
           // Set an empty title on the first child element of the codelab
           // Firefox picks up Codelab's title attribute and makes a tooltip
-          contentContainer.querySelector('#drawer').setAttribute('title', '');
-          contentContainer.querySelector('#metadata').innerHTML='';
+          var metaNode = document.querySelector('#metadata');
+          if(metaNode){
+            metaNode.style='display:none;';
+          }
+          var contentNode = document.querySelector('#drawer');
+          if(contentNode){
+            contentNode.querySelector('#drawer').setAttribute('title', '');
+          }
         }.bind(this));
       },
 
       _onPageChange: function(slug) {
+        
         if (slug) {
           this.$.tutorialAjax.generateRequest();
         }

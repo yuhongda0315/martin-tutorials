@@ -133,7 +133,7 @@
           function loadPage() {
             this.page = page;
             let currentPage = this.$.pages.selectedItem;
-            if (currentPage.updateMetadata) {
+            if (currentPage && currentPage.updateMetadata) {
               currentPage.updateMetadata();
             }
             // We don't currently manage canonical URLs and the may be set
