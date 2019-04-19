@@ -16,7 +16,7 @@ author: RongCloud Web Team <yuhongda0315@163.com>
 
 Duration: 5:00
 
-SealRTC Web 是基于 [RongCloud Web RTC 3.0.0](https://www.rongcloud.cn/docs/web_rtclib.html) 的音视频示例，通过此示例，可更好的帮助您集成、使用 Web RTC SDK
+SealRTC Web 是基于 [RongCloud Web RTC 3.0](https://www.rongcloud.cn/docs/web_rtclib.html) 的音视频示例，通过此示例，可更好的帮助您集成、使用 Web RTC SDK
 
 #### 创建应用
 
