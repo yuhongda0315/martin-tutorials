@@ -23,7 +23,8 @@
     "serve-examples": "./bin/serve $(if [ -z \"$*\" ]; then echo \"examples\"; fi)",
     "serve-live": "./bin/serve",
     "start-server": "node ./server.js --root build/ --host 0.0.0.0 --port ${PORT:-80} $(if [ -n \"${BOT_PROXY:-}\" ]; then echo \"--bot-proxy ${BOT_PROXY}\"; fi)",
-    "test": "npm-run-all lint-js lint-polymer lint-style lint-content"
+    "test": "npm-run-all lint-js lint-polymer lint-style lint-content",
+    "release": "node shell.js"
   },
   "devDependencies": {
     "eslint": "3.19.0",
