@@ -42,7 +42,7 @@ Duration: 5:00
 
 **下载并安装 Node.js**
 
- Node.js 最低版本为 [6.5+](http://nodejs.cn/download/)，如果机器已安装 Node ，可使用 [NVM](https://github.com/creationix/nvm) 切换版本
+ Node.js 最低版本为 [10+](http://nodejs.cn/download/)，如果机器已安装 Node ，可使用 [NVM](https://github.com/creationix/nvm) 切换版本
 
 **源码**
 
@@ -107,7 +107,7 @@ git clone https://github.com/rongcloud/sealrtc-web.git
 ```js
 win.RongSeal.Config = {
     // 融云应用 AppKey，可在融云开发者后台获取
-    APPKEY: 'z3v5yqkbv8v30',
+    APPKEY: '',
     // SealRTC Server 地址
     URL: 'http://localhost:8585/',
     // 屏幕共享插件下载地址，默认即可
@@ -117,7 +117,7 @@ win.RongSeal.Config = {
 
 **启动服务**
 
-浏览器限制协议必须是 `HTTPS` 或 `http://localhost:port` 方可使用摄像头、麦克风
+__浏览器限制协议必须是 `HTTPS` 或 `http://localhost:port` 方可使用摄像头、麦克风__
 
 所以需准备本地服务，若无本地服务推荐: [Nginx](http://nginx.org/en/download.html) 或 [Node.js Puer](https://www.npmjs.com/package/puer)
 
@@ -135,7 +135,7 @@ npm install puer -g
 puer
 ```
 
-启动成功后出现如下界面
+启动成功后出现如下界面，点击 `src/index.html` 开始体验
 
 ![](./puer.png)
 
