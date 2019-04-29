@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM rongcloud:xenial
 
 # System dependencies
 RUN apt-get update && apt-get install --yes curl xz-utils

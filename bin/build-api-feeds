@@ -10,7 +10,7 @@ DEFAULT_SOURCE = './api/codelabs.json'
 DEFAULT_DESTINATION = './api/tutorials'
 
 MAX_ITEMS = 10
-URL_FORMAT = 'https://tutorials.ubuntu.com/tutorial/{id}'
+URL_FORMAT = 'https://tutorials.rongcloud.cn/tutorial/{id}'
 
 DIFFICULTY_MAP = {
     1: 'Beginner',

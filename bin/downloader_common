@@ -1,5 +1,5 @@
 GITHUB="https://github.com"
-REPO="ubuntu/tutorial-deployment"
+REPO="rongcloud/tutorial-deployment"
 BINARY_DIR=`dirname "$0"`
 
 if [ -z "`which curl`" ]; then

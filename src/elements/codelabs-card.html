@@ -20,7 +20,7 @@
       }
 
       paper-card {
-        font-family: 'Ubuntu', Helvetica, Arial;
+        font-family: Helvetica, Arial;
         height: 100%;
         position: relative;
         width: 100%;
@@ -55,7 +55,7 @@
 
       .heading {
         margin: 10px 0 0;
-        font-family: 'Ubuntu', Helvetica, Arial;
+        font-family: Helvetica, Arial;
         font-size: 28px;
         font-weight: 300;
       }
@@ -197,9 +197,6 @@
       },
 
       _extractLabelTag: function(tags) {
-        if (tags.includes('gci')) {
-          return 'https://assets.ubuntu.com/v1/e963a887-label-gci.png';
-        };
         return '';
       },
 

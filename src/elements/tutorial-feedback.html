@@ -52,7 +52,6 @@
         background-color: #0e8420;
         color: #fff;
         text-transform: capitalize;
-        font-family: 'Ubuntu';
         padding-left: 24px;
         padding-right: 24px;
         height: 42px;
@@ -86,7 +85,6 @@
         width: 300px;
         margin-bottom: 0;
         margin-right: 15px;
-        font-family: 'Ubuntu';
         font-size: 1em;
       }
     </style>
@@ -97,10 +95,6 @@
           <h3>Was this tutorial useful?</h3>
         </div>
         <div id="feedbackButtons" class="layout horizontal">
-          <iron-icon title="Positive response" id="positiveButton" class="big" src="https://assets.ubuntu.com/v1/04f445ea-Helpful-yes.svg" on-click="submitPositive"></iron-icon>
-          <iron-icon title="Neutral response" id="neutralButton" class="big" src="https://assets.ubuntu.com/v1/e03275bf-Helpful-unsure.svg" on-click="submitNeutral"></iron-icon>
-          <iron-icon title="Negative response" id="negativeButton" class="big" src="https://assets.ubuntu.com/v1/d20e84ba-Helpful-no.svg" on-click="submitNegative"></iron-icon>
-
         </div>
       </div>
       <div id="newsletter" class="layout">
@@ -189,7 +183,6 @@
       },
 
       _feedbackMessageGitHub: function() {
-        issueURL = 'https://github.com/canonical-websites/tutorials.ubuntu.com';
         issueURL += '/issues/new?title=[' + this.title + '] ';
         issueURL += '<please add a title>&body=<describe the issue>';
         content = '<p>Thank you for your feedback.</p>';
